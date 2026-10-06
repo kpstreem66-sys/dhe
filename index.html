@@ -1,226 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UCF-GOC Central Command</title>
+    <title>Project Portal</title>
     <style>
         body {
-            background-color: #0b0f19;
-            color: #4af6c3;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e222b;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            padding: 40px 20px;
             margin: 0;
-            padding: 20px;
         }
-        .dashboard {
-            max-width: 1000px;
+        .main-container {
+            max-width: 500px;
             margin: 0 auto;
-            border: 2px solid #1f4068;
-            background-color: #111b2d;
-            padding: 20px;
-            box-shadow: 0 0 20px rgba(74, 246, 195, 0.2);
+            background-color: #282c34;
+            padding: 30px;
             border-radius: 8px;
-        }
-        header {
-            text-align: center;
-            border-bottom: 2px dashed #1f4068;
-            padding-bottom: 15px;
-            margin-bottom: 20px;
+            border: 1px solid #3e4451;
         }
         h1 {
-            margin: 0;
+            color: #ffffff;
             font-size: 24px;
-            letter-spacing: 2px;
-            color: #ffffff;
-        }
-        .subtitle {
-            color: #8a99ad;
-            font-size: 12px;
-            margin-top: 5px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        .card {
-            background-color: #16243d;
-            border: 1px solid #1f4068;
-            padding: 15px;
-            border-radius: 6px;
-        }
-        .card h2 {
             margin-top: 0;
-            font-size: 16px;
-            color: #ffffff;
-            border-bottom: 1px solid #1f4068;
-            padding-bottom: 5px;
+            margin-bottom: 8px;
         }
-        .theater-card {
-            grid-column: span 2;
-            background-color: #221c17;
-            border: 1px solid #d97736;
-            color: #f7a063;
-        }
-        .theater-card h2 {
-            color: #ffffff;
-            border-bottom: 1px solid #d97736;
-        }
-        .archive-card {
-            grid-column: span 2;
-            border: 1px solid #4af6c3;
-        }
-        .status-alert {
-            background-color: #3d1625;
-            border: 1px solid #ff4a5a;
-            color: #ff4a5a;
-            padding: 10px;
-            border-radius: 4px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .badge {
-            background-color: #1f4068;
-            color: #4af6c3;
-            padding: 3px 8px;
-            border-radius: 3px;
-            font-size: 11px;
-            display: inline-block;
-            margin-top: 5px;
-        }
-        .theater-badge {
-            background-color: #d97736;
-            color: #221c17;
-            font-weight: bold;
+        .desc {
+            color: #abb2bf;
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 25px;
         }
         ul {
-            padding-left: 20px;
-            margin: 10px 0;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
         }
         li {
             margin-bottom: 12px;
-            font-size: 14px;
         }
-        .archive-list {
-            list-style: none;
-            padding-left: 0;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-        .archive-list li {
-            background-color: #0b0f19;
-            padding: 10px;
-            border-radius: 4px;
-            border: 1px solid #1f4068;
-        }
-        .archive-list a {
-            color: #4af6c3;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 13px;
+        a {
             display: block;
+            color: #ffffff;
+            background-color: #3b4048;
+            padding: 12px 16px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 6px;
+            border: 1px solid #4b5263;
         }
-        .archive-list a.hostile {
-            color: #ff4a5a;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 11px;
-            color: #8a99ad;
+        a:hover {
+            background-color: #4b5263;
+            border-color: #5c6370;
         }
     </style>
 </head>
 <body>
 
-    <div class="dashboard">
-        <header>
-            <h1>UNITED CLASS FORCES — GLOBAL OCCULT COALITION</h1>
-            <div class="subtitle">DOCUMENT REF: UCF-NET-2026 // SECURITY LEVEL: COALITION ALLIANCE</div>
-        </header>
-
-        <div class="status-alert">
-            🚨 ACTIVE NOTICE: ALLIANCE CAMPAIGN LOGGED AND OPERATIONAL
-        </div>
-
-        <div class="grid">
-            <!-- Strategic Theater -->
-            <div class="card theater-card">
-                <h2>Strategic Command Theater (Document Ref: SEC-DEF-09-22-26)</h2>
-                <p>Target Environment Matrix: <strong>Italian Peninsula Campaign Map</strong></p>
-                <ul>
-                    <li><strong>Formal Hostilities:</strong> Instrument executed and active in theater simulation protocols.</li>
-                    <li><strong>Mobilization Initiative:</strong> Alliance strategic mobilization rosters activated.</li>
-                </ul>
-                <span class="badge theater-badge">Status: Campaign Active</span>
-            </div>
-
-            <!-- Law & Voting -->
-            <div class="card">
-                <h2>General Assembly & Voting</h2>
-                <p>Status: <strong>62 Potential Roster Slots Defined</strong></p>
-                <ul>
-                    <li><strong>One-Vote Mandate:</strong> Every single desk occupant gets 1 equal vote.</li>
-                    <li><strong>Sticker Proposals:</strong> Custom tier designs require a 50% majority rule.</li>
-                    <li><strong>Emergency Powers:</strong> Permanent Council Leaders hold absolute VETO powers over declarations.</li>
-                </ul>
-            </div>
-
-            <!-- Logistics & Supply -->
-            <div class="card">
-                <h2>Humanitarian Supply Cache</h2>
-                <p>Current Logistics Stockpile Levels:</p>
-                <ul>
-                    <li>✏️ Standard Tactical Pencils: <strong>High</strong></li>
-                    <li>🧽 Emergency Erasers: <strong>Medium</strong></li>
-                    <li>📄 Loose-Leaf Supply Reserves: <strong>Critical</strong></li>
-                </ul>
-            </div>
-
-            <!-- Desklandia Info -->
-            <div class="card">
-                <h2>Sovereign Republic of Desklandia</h2>
-                <p>Territory Matrix: <strong>Desks 14 through 18</strong></p>
-                <ul>
-                    <li>16 signed coalition alliance forces on local charters.</li>
-                    <li>Desk lines clearly marked on the perimeter wood.</li>
-                </ul>
-            </div>
-
-            <!-- Court of Justice -->
-            <div class="card">
-                <h2>Classroom Court of Justice</h2>
-                <p>Arbites panel standing by for boundary disputes or desk infractions during recess.</p>
-                <span class="badge">Rulings: Final and Binding</span>
-            </div>
-
-            <!-- Master Document Archive Folder -->
-            <div class="card archive-card">
-                <h2>📋 MASTER ALLIANCE ARCHIVE</h2>
-                <p>Select any verified treaty or asset sheet below to download directly from the repository directory:</p>
-                
-                <ul class="archive-list">
-                    <li><a class="hostile" href="formal-hostilities.pdf" download>📥 Instrument of Formal Hostilities.pdf</a></li>
-                    <li><a href="court-framework.pdf" download>📥 Classroom Court Framework.pdf</a></li>
-                    <li><a href="humanitarian-supply.pdf" download>📥 Humanitarian Supply Act.pdf</a></li>
-                    <li><a href="voting-protocols.pdf" download>📥 General Assembly Voting Protocols.pdf</a></li>
-                    <li><a href="veto-emergency.pdf" download>📥 Veto & Emergency Powers Act.pdf</a></li>
-                    <li><a href="desklandia-charter.pdf" download>📥 Sovereign Republic of Desklandia Charter.pdf</a></li>
-                    <li><a href="coalition-charter-1.pdf" download>📥 Coalition Charter (Record 1).pdf</a></li>
-                    <li><a href="coalition-charter-2.pdf" download>📥 Coalition Charter (Record 2).pdf</a></li>
-                    <li><a href="coalition-charter-3.pdf" download>📥 Coalition Charter (Record 3).pdf</a></li>
-                    <li><a href="strategic-mobilization.pdf" download>📥 Annex A: Strategic Mobilization.pdf</a></li>
-                    <li><a href="expanded-agreement.pdf" download>📥 Annex B: Expanded Coalition Force Agreement.pdf</a></li>
-                    <li><a href="alliance-ratification.pdf" download>📥 Annex C: Multi-Sector Alliance Ratification.pdf</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer">
-            Ratified and signed by the Supreme Commander, United Class Forces GOC. Copyleft 2026.
-        </div>
+    <div class="main-container">
+        <h1>Project Portal</h1>
+        <p class="desc">Click the links below to download files directly:</p>
+        
+        <ul>
+            <li><a href="italy_war_prank_alliance_stickers.pdf" download>Click to download: Italy War Prank Alliance Stickers</a></li>
+            <li><a href="COUNTRY_PAPERWORK.pdf" download>Click to download: Country Paperwork</a></li>
+            <li><a href="desk_alliance_stickers.pdf" download>Click to download: Desk Alliance Stickers</a></li>
+            <li><a href="dlordandstuff.pdf" download>Click to download: D Lord and Stuff</a></li>
+            <li><a href="GOC.pdf" download>Click to download: GOC Treaty Document</a></li>
+            <li><a href="GOC_2.pdf" download>Click to download: GOC Document 2</a></li>
+            <li><a href="GOC_3.pdf" download>Click to download: GOC Document 3</a></li>
+            <li><a href="GOC_4.pdf" download>Click to download: GOC Document 4</a></li>
+        </ul>
     </div>
 
 </body>
